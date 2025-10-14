@@ -137,6 +137,12 @@ app_license = "mit"
 # ---------------
 # Hook on document methods and events
 
+doc_events = {
+    "Sales Invoice": {
+        "before_submit": "havanozimrasaas.havanozimra.send_from_button"
+    }
+}
+
 # doc_events = {
 # 	"*": {
 # 		"on_update": "method",
