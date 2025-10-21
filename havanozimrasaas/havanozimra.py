@@ -177,7 +177,7 @@ def update_sales_invoice(invoice_name: str,z_status: int, receipt_no: str, fisca
         qr_base64 = generate_qr_base64(qr_code_data)
         print(qr_base64)
         # Update custom fields
-        sales_invoice.custom_zimra_status = z_status
+        sales_invoice.custom_zstatus = z_status
         sales_invoice.custom_receiptno = receipt_no
         sales_invoice.custom_device_id = device_id
         sales_invoice.custom_fiscal_day = fiscal_day

@@ -139,7 +139,7 @@ app_license = "mit"
 
 doc_events = {
     "Sales Invoice": {
-        "before_submit": "havanozimrasaas.havanozimra.send_from_button"
+        "on_submit": "havanozimrasaas.havanozimra.send_from_button"
     }
 }
 
